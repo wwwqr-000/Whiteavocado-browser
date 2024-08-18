@@ -2,3 +2,4 @@
 browser/browser.cbp
 browser/bin/Debug/browser.exe
 browser/obj/Debug/main.o
+browser/browser.layout
