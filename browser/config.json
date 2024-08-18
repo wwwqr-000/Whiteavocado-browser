@@ -1,0 +1,29 @@
+{
+    "server": [
+        {
+            "usingCheck": true,
+            "usingTor": false,
+            "desc": "hacker",
+            "dns": "hacker.onthewifi.com",
+            "port": "80",
+            "prot": "http",
+            "endpoint-file": "index.php",
+            "pages-path": "pages",
+            "check": [
+                {
+                    "desc": "Online check",
+                    "endpoint": "online.php",
+                    "value": {
+                        "op": "==",
+                        "key": "ok"
+                    }
+                }
+            ]
+        }
+    ],
+    "connection": {
+        "max-delay": "5",
+        "max-tries": "2",
+        "ignoreCert": true
+    }
+}
